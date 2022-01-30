@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Settings</title>
+    <style>
+      kbd {
+        font-size: inherit;
+        font-family: inherit;
+      }
+
+      input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .success {
+        color: green;
+      }
+
+      .error {
+        color: red;
+      }
+
+      .message {
+        display: block;
+      }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="js-form">
+      <label for="interval_time">interval time</label>
+      <input type="number" min="5" value="5" id="interval_time" />
+    </div>
+
+    <div class="js-form">
+      <label for="redirection_count">redirection count</label>
+      <input type="number" min="1" value="10" id="redirection_count" />
+    </div>
+
+    <button id="sure_btn" type="button">sure</button>
+
+    <script src="js/popup.js"></script>
+  </body>
+</html>
